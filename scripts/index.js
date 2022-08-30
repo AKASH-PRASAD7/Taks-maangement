@@ -1,7 +1,16 @@
-console.log("Hello world");
+console.log("Running");
 
-const open = document.getElementsByClassName(add);
+const btnclose = document.querySelector('.close');
+const close = document.querySelector('.add1');
+const modal = document.querySelector('.popup');
+const btn_crt = document.getElementById('btn_crt');
 
-open.addEventListner('Click', () => {
-    popup
-})
+btn_crt.addEventListener('click', () => {
+    modal.style.display = 'block';
+});
+close.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+btnclose.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
